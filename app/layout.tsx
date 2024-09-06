@@ -1,5 +1,5 @@
 "use client";
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { AppSidebar } from "@/components/app-sidebar";
@@ -29,7 +29,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [sidebarOpen, setSidebarOpen] = React.useState(true);
+  const sidebarOpen = true;
 
   const noSidebar = ["/login", "/forgot-password", "/signup"];
 

@@ -21,16 +21,16 @@ import {
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
-import { NavProjects } from "@/components/nav-projects";
+// import { NavProjects } from "@/components/nav-projects";
 import { NavSecondary } from "@/components/nav-secondary";
 import { NavUser } from "@/components/nav-user";
-import { StorageCard } from "@/components/storage-card";
-import { TeamSwitcher } from "@/components/team-switcher";
+// import { StorageCard } from "@/components/storage-card";
+// import { TeamSwitcher } from "@/components/team-switcher";
 import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarHeader,
+  // SidebarHeader,
   SidebarItem,
   SidebarLabel,
 } from "@/components/ui/sidebar";
