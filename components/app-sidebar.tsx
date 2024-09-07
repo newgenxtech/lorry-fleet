@@ -249,7 +249,7 @@ const data = {
 
 export function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="bg-white">
       {/* <SidebarHeader>
         <TeamSwitcher teams={data.teams} />
       </SidebarHeader> */}

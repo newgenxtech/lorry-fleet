@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import login from "@/assets/img/login.jpg";
 
-export default function Dashboard() {
+export default function LoginForm({ onLogin }: { onLogin: () => void }) {
   return (
     <div className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px] fade-in-15">
       <div className="flex items-center justify-center py-12">
@@ -39,12 +40,12 @@ export default function Dashboard() {
               </div>
               <Input id="password" type="password" required />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full" onClick={onLogin}>
               Login
             </Button>
-            <Button variant="outline" className="w-full">
+            {/* <Button variant="outline" className="w-full">
               Login with Google
-            </Button>
+            </Button> */}
           </div>
           <div className="mt-4 text-center text-sm">
             Don&apos;t have an account?{" "}
